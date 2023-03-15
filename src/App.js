@@ -1,23 +1,16 @@
-import './App.css';
+import "./App.css";
 import React, { useState } from "react";
-import { Login } from "./Login"
-import { Navbar } from "./Navbar"
-import { Register } from "./Register"
+import { Login } from './components/Login';
+import { Navbar } from './components/Navbar';
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 
 function App() {
-  const [currentForm, setCurrentForm] = useState['login'];
-
-  const toggleForm = (formName) => {
-    setCurrentForm(formName)
-  }
 
   return (
-    <div>
-      <Navbar/>;
-      <div> {
-        currentForm === "login" ? <Login onFormSwitch={toggleForm}/> : <Register onFormSwitch={toggleForm}/>
-      }
-      </div>
+    <div className="App">
+      <Navbar/>
+      <br/>
+      <Login/>
     </div>
   );
 }
