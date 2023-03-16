@@ -3,11 +3,15 @@ export const Login = () => {
   
     return (
         <form>
-            <label for="email">email</label>
+            <h3>Log In</h3>
+            <label for="email">Email: </label>
             <input type="email" placeholder="youremail@gmail.com" id="email" name="email"/>
-            <label for="password">password</label>
+            <br/>
+            <label for="password">Password: </label>
             <input type="password" placeholder="Password Here" id="password" name="password"/>
-            <button type="submit"><h3>Log In</h3></button>
+            <br/>
+            <button type="submit">Log In</button>
+            <br/>
         </form>
     )
 }
