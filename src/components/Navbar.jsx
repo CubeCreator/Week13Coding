@@ -1,19 +1,14 @@
-
+import "../../node_modules/bootstrap/dist/css/bootstrap.min.css"
+import "./Navbar.css"
 export const Navbar = () => {
     return (
-        <form>
-            <ul>
-                <li>
-                    <a>Homepage</a>
-                </li>
-                <li>
-                    <a>About</a>
-                </li>
-                <li>
-                    <a>Settings</a>
-                </li>
-            </ul>
-        </form>
-        
+        <nav class="navbar navbar-expand-lg">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="#">Home</a>
+                <a class="nav-item nav-link" href="#">Projects</a>
+                <a class="nav-item nav-link" href="#">About</a>
+                <a class="nav-item nav-link" href="#">Settings</a>
+            </div>
+        </nav>
     )
 }
